@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
+    <script src="https://cdn.tiny.cloud/1/5xockfv01u8n7b63mapza8mjxhr9x0606z4fvkb8hhvhl337/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -43,6 +45,8 @@
     </section>
 
     <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

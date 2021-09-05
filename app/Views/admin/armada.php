@@ -4,11 +4,15 @@
 <div class="container">
     <h3>Data Armadan</h3>
     <p class="text-secondary">Total armada yang terdaftar 45 unit</p>
-    <a href="#" type="button" class="btn btn-primary mb-3">Tambah Armada</a>
+    <a href="/armada-create" type="button" class="btn btn-primary mb-3">Tambah Armada</a>
 
-    <div class="alert alert-success" role="alert">
-        <i class="bi bi-check-circle-fill"></i> Data Berhasil Ditambahkan
-    </div>
+
+    <?php if (session()->get('success')) : ?>
+        <div class="alert alert-success" role="alert">
+            <i class="bi bi-check-circle-fill"></i> <?= session()->get('success'); ?>
+        </div>
+    <?php endif; ?>
+
 
     <div class="card mt-5">
         <div class="card-body table-responsive">
