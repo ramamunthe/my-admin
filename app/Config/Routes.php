@@ -35,6 +35,9 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'AdminController::index');
 $routes->get('/armada-create', 'AdminController::create');
 $routes->post('/armada-store', 'AdminController::store');
+$routes->post('/armada-update/(:segment)', 'AdminController::update/$1');
+$routes->get('/armada-edit/(:segment)', 'AdminController::edit/$1');
+$routes->get('/armada-delete/(:segment)', 'AdminController::delete/$1');
 
 /*
  * --------------------------------------------------------------------

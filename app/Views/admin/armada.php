@@ -34,7 +34,7 @@
                             <td>
                                 <div class="d-flex">
                                     <button type="button" class="btn btn-danger btn-sm me-1" data-bs-toggle="modal" data-bs-target="#modalDelete<?= $car['car_id']; ?>">Hapus</button>
-                                    <a href="#" type="button" class="btn btn-secondary btn-sm">Ubah</a>
+                                    <a href="/armada-edit/<?= $car['slug_car']; ?>" type="button" class="btn btn-secondary btn-sm">Ubah</a>
                                 </div>
                             </td>
                         </tr>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                        <a href="#" type="button" class="btn btn-danger">Ya</a>
+                        <a href="/armada-delete/<?= $car['car_id']; ?>" type="button" class="btn btn-danger">Ya</a>
                     </div>
                 </div>
             </div>
