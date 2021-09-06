@@ -1,6 +1,9 @@
 tinymce.init({
       selector: '#area_car',
       height: 400,
+      plugins: [
+        'table'
+      ],
       toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent',
 });
 

@@ -24,6 +24,7 @@
                 <div class="navbar-nav">
                     <a class="nav-link <?= $uri->getSegment(1) == '' ? 'active' : ''; ?>" href="/">Armada</a>
                     <a class="nav-link  <?= $uri->getSegment(1) == 'admin-category' ? 'active' : ''; ?>" href="/admin-category">Kategori</a>
+                    <a class="nav-link <?= $uri->getSegment(1) == 'admin-paket' ? 'active' : ''; ?>" href="/admin-paket">Paket Wisata</a>
                     <a class="nav-link" href="#">Slider</a>
                 </div>
                 <div class="navbar-nav">

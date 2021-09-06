@@ -44,6 +44,14 @@ $routes->post('/admin-category-store', 'CategoryController::store');
 $routes->post('/admin-category-update/(:segment)', 'CategoryController::update/$1');
 $routes->get('/admin-category-delete/(:segment)', 'CategoryController::delete/$1');
 
+$routes->get('/admin-paket', 'PaketController::index');
+$routes->get('/admin-paket-create', 'PaketController::create');
+$routes->post('/admin-paket-store', 'PaketController::store');
+$routes->post('/admin-paket-update', 'PaketController::update');
+$routes->get('/admin-paket-delete/(:segment)', 'PaketController::delete/$1');
+$routes->get('/admin-paket-edit/(:segment)', 'PaketController::edit/$1');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
