@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <?php $uri = current_url(true); ?>
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="/">Admin Website</a>
@@ -19,8 +22,8 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Armada</a>
-                    <a class="nav-link" href="#">Kategori</a>
+                    <a class="nav-link <?= $uri->getSegment(1) == '' ? 'active' : ''; ?>" href="/">Armada</a>
+                    <a class="nav-link  <?= $uri->getSegment(1) == 'admin-category' ? 'active' : ''; ?>" href="/admin-category">Kategori</a>
                     <a class="nav-link" href="#">Slider</a>
                 </div>
                 <div class="navbar-nav">

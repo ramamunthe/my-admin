@@ -2,8 +2,8 @@
 
 <?= $this->section('content') ?>
 <div class="container">
-    <h3>Data Armadan</h3>
-    <p class="text-secondary">Total armada yang terdaftar 45 unit</p>
+    <h3>Data Armada</h3>
+    <p class="text-secondary">Total armada yang terdaftar <?= count($cars) ?> unit</p>
     <a href="/armada-create" type="button" class="btn btn-primary mb-3">Tambah Armada</a>
 
 
@@ -14,7 +14,7 @@
     <?php endif; ?>
 
 
-    <div class="card mt-5">
+    <div class="card mt-5 <?= count($cars) == 0 ? 'd-none' : ''; ?>">
         <div class="card-body table-responsive">
             <table class="table table-borderless align-middle table-striped">
                 <thead>

@@ -107,6 +107,10 @@ class AdminController extends BaseController
 			'car' => $car
 		];
 
+		if (empty($data['car'])) {
+			throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+		};
+
 		return view('admin/edit_armada', $data);
 	}
 

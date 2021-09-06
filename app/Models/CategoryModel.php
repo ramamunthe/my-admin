@@ -11,7 +11,7 @@ class CategoryModel extends Model
 
     protected $allowedFields = [
         'category_id',
-        'slud_category',
+        'slug_category',
         'title_category'
     ];
 }

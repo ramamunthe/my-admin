@@ -39,6 +39,11 @@ $routes->post('/armada-update/(:segment)', 'AdminController::update/$1');
 $routes->get('/armada-edit/(:segment)', 'AdminController::edit/$1');
 $routes->get('/armada-delete/(:segment)', 'AdminController::delete/$1');
 
+$routes->get('/admin-category', 'CategoryController::index');
+$routes->post('/admin-category-store', 'CategoryController::store');
+$routes->post('/admin-category-update/(:segment)', 'CategoryController::update/$1');
+$routes->get('/admin-category-delete/(:segment)', 'CategoryController::delete/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
